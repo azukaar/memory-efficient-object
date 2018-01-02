@@ -1,4 +1,4 @@
-const BitArray = require('../lib/BitArray');
+const BitArray = require('../lib/bitArray');
 const assert = require('assert');
 
  let test = new BitArray(8);
