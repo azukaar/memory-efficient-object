@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/azukaar/memory-efficient-object/tree/master.svg?style=svg)](https://circleci.com/gh/azukaar/memory-efficient-object/tree/master)
+
 # Introduction
 
 this package is a very light (no dependencies) module to drastically optimise the usage of memory in data-driven application. Using basic objects/arrays in JS is very sub-optimal, and typed array often fail to fit people's needs. Also, using JSON to serialise your data leads to major bottleneck in disk / memory / network usage. This library cater for this problem by providing an implementation of an array with bit-per-bit optimisation of your memory usage.
