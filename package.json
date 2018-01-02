@@ -1,0 +1,19 @@
+{
+  "name": "memory-efficient-object",
+  "version": "0.0.1",
+  "author": "Yann Stepienik",
+  "email" : "azukaar@gmail.com",
+  "license": "ISC",
+  "description": "Memory efficient implementation of objects / arrays for bits and bytes mainpulation (int, char, uint, ...) in JS, using schema for serialisation",
+  "main": "index.js",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/azukaar/memory-efficient-object"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^4.1.0"
+  }
+}
