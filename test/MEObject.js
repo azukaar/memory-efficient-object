@@ -48,6 +48,11 @@ describe('Array values', function() {
         assert.deepEqual(test.get("coords"), [1,2,3]);
     });
 
+    it('should allow random access in arrays', function() {
+        test.set("coords", [1,2,3])
+        assert.equal(test.get("coords", 1), 2);
+    });
+
     it('should save arrays of any types', function() {
         test.set("lights", [true, false, true])
         assert.deepEqual(test.get("lights"), [true, false, true]);

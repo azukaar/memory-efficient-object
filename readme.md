@@ -82,6 +82,7 @@ let test = new MEObject(testSchema);
 
 test.set("coords", [1,2,3]);
 test.get("coords"); // [1,2,3]
+test.get("coords", 1); // 2
 ```
 
 
