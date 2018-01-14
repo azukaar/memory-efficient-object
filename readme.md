@@ -94,4 +94,4 @@ The serialised output of this library is compression friendly, bare in mind that
 
 # ToDo
 
-- fill gaps between values dynamicall
+- fill gaps between values dynamically
