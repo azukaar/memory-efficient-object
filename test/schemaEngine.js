@@ -29,7 +29,7 @@ describe('Schema Compilation', function() {
         assert.deepEqual(schemaEngine.get(testSchema, "x"), { 
           type: "int",
           length : 32,
-          position : 64,
+          position : 56,
         });
     });
     
@@ -39,7 +39,7 @@ describe('Schema Compilation', function() {
           length : 24,
           of : "uint",
           oflen : 8,
-          position : 136,
+          position : 120,
         });
         
         assert.deepEqual(schemaEngine.get(testSchema, "lights"), { 
@@ -47,7 +47,7 @@ describe('Schema Compilation', function() {
           length : 3,
           of : "bool",
           oflen : 1,
-          position : 160,
+          position : 144,
         });
     });
 });

@@ -25,7 +25,7 @@ let test = new MEObject(testSchema, {
 });
 
 describe('Documentation', function() {
-  it('is accurate', function() {
+  it('is accurate 1', function() {
     assert.deepEqual(test.toJson(), { 
       id: 3,
       letter: 'A',
@@ -36,9 +36,13 @@ describe('Documentation', function() {
       coords: [ 1, 2, 3 ],
       lights: [ true, false, true ]
     });
+  });
 
-    assert.equal(test.serialize().length, 21);
+  it('is accurate 2', function() {
+    assert.equal(test.serialize().length, 10);
+  });
 
+  it('is accurate 3', function() {
     let testUnSerialised = new MEObject(testSchema, test.serialize());
     assert.deepEqual(testUnSerialised.toJson(), { 
       id: 3,

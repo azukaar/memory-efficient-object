@@ -76,8 +76,8 @@ Will display :
 console.log(test.serialize());
 
 /*
-    Will display: ╚A╔￿￿￿￿ ￿￿￬x Yann╔╗╚║
-    As you can appreciate, this is a much smaller string.
+    Will display: ǿ￿￿￬硙慮渁ȃԀ
+    As you can appreciate, this is a much smaller string (10 char vs. 150).
 */
 
 // serialize then unserialize

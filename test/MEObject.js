@@ -2,13 +2,13 @@ const {schemaEngine, MEObject} = require('../index');
 const assert = require('assert');
 
 const schema = {
-    "id" : "uint(2)",
+    "id" : "uint(16)",
     "letter" : "char",
     "isBlue" : "bool",
     "size" : "uint(32)",
     "x" : "int(32)",
     "name" : "string(4)",
-    "coords" : "uint(8)[3]",
+    "coords" : "uint(32)[3]",
     "lights" : "bool[3]"
 };
 
