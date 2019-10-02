@@ -37,7 +37,7 @@ describe('Documentation', function() {
       lights: [ true, false, true ]
     });
 
-    assert(test.serialize(), "ǿ￿＀￿Y慮渁ȃԀ");
+    assert.equal(test.serialize().length, 21);
 
     let testUnSerialised = new MEObject(testSchema, test.serialize());
     assert.deepEqual(testUnSerialised.toJson(), { 

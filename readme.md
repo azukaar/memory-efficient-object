@@ -76,7 +76,7 @@ Will display :
 console.log(test.serialize());
 
 /*
-    Will display: ǿ￿＀￿Y慮渁ȃԀ
+    Will display: ╚A╔￿￿￿￿ ￿￿￬x Yann╔╗╚║
     As you can appreciate, this is a much smaller string.
 */
 
