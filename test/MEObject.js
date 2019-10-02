@@ -71,9 +71,27 @@ describe('Array utils', function() {
     });
 
     it('should unserialise', function() {
+        test.set("id", 3)
+        test.set("letter", "A")
+        test.set("isBlue", "true")
+        test.set("lights", ["true", "false", "true"])
         let testSerialised = test.serialize();
         let testunSerialised = new MEObject(testSchema, testSerialised);
 
+       assert.equal(testunSerialised.get("id"), 3);
        assert.equal(testunSerialised.get("letter"), "A");
+       assert.equal(testunSerialised.get("isBlue"), true);
+       assert.deepEqual(testunSerialised.get("lights"), [true, false, true]);
+    });
+
+    it('should jsonify', function() {
+       assert.deepEqual(test.toJson(), { id: 3,
+        letter: 'A',
+        isBlue: true,
+        size: 4294967295,
+        x: -5000,
+        name: 'Yann',
+        coords: [ 1, 2, 3 ],
+        lights: [ true, false, true ]});
     });
 });
